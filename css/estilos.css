@@ -1,0 +1,7 @@
+.carlosmenu{
+    background:linear-gradient(rgb(176, 208, 33),rgb(197, 245, 106)) !important
+}
+.mifoto{
+    border-radius: 50%;
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+}
