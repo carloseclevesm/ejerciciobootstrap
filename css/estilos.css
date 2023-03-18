@@ -1,6 +1,33 @@
 .carlosmenu{
     background:linear-gradient(rgb(176, 208, 33),rgb(197, 245, 106)) !important
 }
+@keyframes subir{
+    0% {bottom: -180px;}
+    100%{bottom: 0px}
+}
+/* ^ significa todo lo que empieza con col */
+.diagramacion [class^="col"]{
+    border: solid darkblue 0.1em;
+}
+.fotoarriba{
+    animation: subir 1 0.8s forwards;
+    /* border: blue; */
+    bottom: -100px;
+    position: fixed;
+    right: 0;
+    width: 20%;
+    z-index: 1000;
+    /*     min-width: 200px;
+    max-width: 600px; */
+}
+.fotoarriba img:{
+    filter: opacity(50%);
+    transition: linear all 0.2s;
+}
+.fotoarriba img:hover{
+    filter: opacity(50%);
+    transform: rotate(-10deg)
+}
 .mifoto{
     border-radius: 50%;
     box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
